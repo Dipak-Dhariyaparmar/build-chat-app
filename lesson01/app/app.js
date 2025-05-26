@@ -18,3 +18,8 @@ socket.addEventListener("message", ({ data }) => {
   li.textContent = data;
   document.querySelector("ul").appendChild(li);
 });
+
+// this is a app.js file for a simple WebSocket client
+// It connects to a WebSocket server, sends messages from an input field,
+// and displays incoming messages in a list.
+// The server should be running on ws://localhost:3000

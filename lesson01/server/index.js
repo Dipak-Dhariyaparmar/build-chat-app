@@ -1,10 +1,13 @@
-const ws = require('ws')
-const server = new ws.Server({ port: '3000' })
+const ws = require("ws");
+const server = new ws.Server({ port: "3000" });
 
-server.on('connection', socket => {
-    socket.on('message', message => {
-        const b = Buffer.from(message)
-        console.log(b.toString())
-        socket.send(`${message}`)
-    })
-})
+server.on("connection", (socket) => {
+  socket.on("message", (message) => {
+    const b = Buffer.from(message);
+    console.log(b.toString());
+    socket.send(`${message}`);
+  });
+});
+
+// This is a simple WebSocket server that listens on port 3000.
+// It echoes back any message it receives from a connected client.
