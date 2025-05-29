@@ -22,6 +22,3 @@ io.on("connection", (socket) => {
 });
 
 httpServer.listen(3500, () => console.log("listening on port 3500"));
-
-// This is a simple WebSocket server that listens on port 3000.
-// It echoes back any message it receives from a connected client.

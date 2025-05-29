@@ -8,6 +8,3 @@ server.on("connection", (socket) => {
     socket.send(`${message}`);
   });
 });
-
-// This is a simple WebSocket server that listens on port 3000.
-// It echoes back any message it receives from a connected client.
