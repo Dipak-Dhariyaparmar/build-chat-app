@@ -17,3 +17,8 @@ socket.addEventListener("message", ({ data }) => {
   li.textContent = data;
   document.querySelector("ul").appendChild(li);
 });
+
+// this componnent is used to send messages to the server
+// and display messages received from the server
+// it uses the WebSocket API to connect to the server
+// and listen for messages

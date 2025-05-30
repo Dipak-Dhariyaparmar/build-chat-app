@@ -22,3 +22,9 @@ io.on("connection", (socket) => {
 });
 
 httpServer.listen(3500, () => console.log("listening on port 3500"));
+
+// this component is used to create a Socket.IO server
+// that listens for incoming connections on port 3500
+// it uses the socket.io library to create the server
+// it handles incoming messages from clients and broadcasts them to all connected clients
+// it also logs the messages to the console

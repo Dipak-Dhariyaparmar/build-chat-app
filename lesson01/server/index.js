@@ -8,3 +8,7 @@ server.on("connection", (socket) => {
     socket.send(`${message}`);
   });
 });
+
+// this component is used to create a WebSocket server
+// that listens for incoming connections on port 3000
+// it uses the ws library to create the server
